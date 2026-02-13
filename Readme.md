@@ -84,6 +84,7 @@ A major finding in this study is that **JAX achieves higher validation accuracy*
 
 ---
 
-## 3. Conceptual Insights 
+## 8. Conceptual Insights 
 - **Framework Overhead:** For small models, the "cost of moving data" can outweigh the "cost of math." PyTorch's eager mode is very efficient at this low-scale dispatch.
+
 - **XLA Advantage:** JAX's XLA compiler excels at fusing operations. The higher accuracy in JAX indicates that the compiled computational graph may be providing more effective updates per epoch compared to the imperative PyTorch baseline.
